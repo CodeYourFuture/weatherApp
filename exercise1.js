@@ -1,5 +1,5 @@
 /* 
-  A data structure containing the weather for London has been provided to you by a meteorologist. 
+  A metereologist come to you asking for help in processing weather forecast data stored in a object.
 
   It's nice and full of information but most of it is not interesting, so you are tasked with writing
   a function that takes the data value and return a 'flat' object (flat means that there are not nested values)

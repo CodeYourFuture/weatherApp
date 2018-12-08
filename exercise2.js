@@ -1,9 +1,9 @@
 /* 
-  The metereologist is very happy, but now they want more! The result works, 
-  but it's not very clear what each key refers to, and they want some extra info.
+  The metereologist is very happy, but now they want more! The function written in exercise1 works, 
+  but it's not very clear what each key refers to, and on top of that they want some more data returned..
 
-  You are asked to update the 'parseWeather' function that you wrote for exercise1 to return
-  some more data, alongside more descriptive object keys.
+  You are asked to update the 'parseWeather' function that you wrote to return
+  some more data. The result object keys should also have a more descriptive name.
  
   Write a function called 'parseWeather' that given the shown testData returns a object of the form:
   {
