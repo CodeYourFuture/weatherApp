@@ -1,4 +1,4 @@
-const fetch = require('node-fetch');  // note: this is necessary to use 'fetch' in node
+var fetch = require("node-fetch"); // note: this is necessary to use 'fetch' in node
 
 /* 
   The meterologist is suuuuuper happy with your progress and, confident in your skills, ask one more thing:
@@ -9,20 +9,15 @@ const fetch = require('node-fetch');  // note: this is necessary to use 'fetch' 
   'https://s3-eu-west-1.amazonaws.com/lorenzomixedstuff/weatherData' address.
 
   Write a function called 'fetchWeatherData' that, given the endpoint, fetch the data, reads it and 
-  then console.log() a object of the form:
-  {
-    location: 'London',
-    weather: 'Drizzle',
-    weatherDetails: 'light intensity drizzle,
-    windSpeed: 4.1,
-    visibility: 10000,
-    cloudCoverage: 90
-  }
+  then uses your 'parseWeatherPromise' function from exercise4 (you'll need to copy-paste it here, too.) 
+  to console.log() a forecast in the usual format.
+  
   Your function should also handle rejections (failures of the promise) by logging to the console the phrase
   'Data processing failed!'
 */
 
-var endPoint = 'https://s3-eu-west-1.amazonaws.com/lorenzomixedstuff/weatherData';
+var endPoint =
+  "https://s3-eu-west-1.amazonaws.com/lorenzomixedstuff/weatherData";
 
 function fetchWeatherData() {
   fetch(endPoint)

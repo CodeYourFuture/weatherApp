@@ -2,7 +2,7 @@
   Next step: you want to validate a new approach to your data processing method. 
   
   As the computation to predict the weather can take several seconds to complete, 
-  the input will be now provided as a Promise wrapping the required data rather than a plain object.
+  the input will be now provided as a Promise wrapping the required data rather than a plain Object.
 
   Write a function called 'promiseHandler' that, given a Promise, waits for it to resolve and then console.log()
   the result of it. Don't worry about parsing or transforming the resulting object for now.
