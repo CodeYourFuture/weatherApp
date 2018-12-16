@@ -52,7 +52,7 @@ const failData = new Promise(function(resolve, reject) {
   }, 1000);
 });
 
-function promiseHandler(data) {
+function parseWeatherPromise(data) {
   data
     .then(function(result) {
       var parsedData = {
@@ -71,5 +71,5 @@ function promiseHandler(data) {
 }
 
 // result
-promiseHandler(testData);
-promiseHandler(failData);
+parseWeatherPromise(testData);
+parseWeatherPromise(failData);
