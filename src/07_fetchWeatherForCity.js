@@ -8,17 +8,17 @@ var fetch = require("node-fetch"); // note: this is necessary to use 'fetch' in 
   is composed by 2 parts: the base path "https://api.openweathermap.org/data/2.5/weather" and then 2 parameters
   sets of parameters passed after a "?", and separated by a "&": "q=Manchester" and "appid=255d97c403d96b4642be1ff79ecddbfc".
 
-  Update your 'fetchRealWeatherData' function to take a 'location' parameter and use it to build up the full query string
+  Update your 'fetchWeatherForCity' function to take a 'location' parameter and use it to build up the full query string
   alongside the provided "basePath" and "apiKey" values. Remember to add the "?" and "&" separators!
 */
 var apiKey = "255d97c403d96b4642be1ff79ecddbfc";
 var basePath = "https://api.openweathermap.org/data/2.5/weather";
 
-function fetchRealWeatherData(location) {
+function fetchWeatherForCity(location) {
   // implement
 }
 
 // result
-// fetchRealWeatherData("Bologna");
+// fetchWeatherForCity("Bologna");
 
-module.exports = fetchRealWeatherData;
+module.exports = fetchWeatherForCity;

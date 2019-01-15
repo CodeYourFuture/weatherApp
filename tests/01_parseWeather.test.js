@@ -6,7 +6,7 @@
   This file is for exercise1 only. Test file for the others exercises have to be created.
 */
 
-const parseWeather = require('./01_parseWeather');
+const parseWeather = require('../src/01_parseWeather');
 
 describe('parseWeather', () => {
   test('write a test!', () => {
