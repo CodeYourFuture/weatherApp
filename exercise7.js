@@ -15,24 +15,10 @@ var apiKey = "255d97c403d96b4642be1ff79ecddbfc";
 var basePath = "https://api.openweathermap.org/data/2.5/weather";
 
 function fetchRealWeatherData(location) {
-  fetch(basePath + "?q=" + location + "&appid=" + apiKey)
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(result) {
-      var parsedData = {
-        location: result.name,
-        weather: result.weather[0].main,
-        weatherDetails: result.weather[0].description,
-        windSpeed: result.wind.speed,
-        visibility: result.visibility,
-        cloudCoverage: result.clouds.all
-      };
-      console.log(parsedData);
-    })
-    .catch(function(error) {
-      console.log("Data processing failed!", error);
-    });
+  // implement
 }
 
-fetchRealWeatherData('Bologna');
+// result
+// fetchRealWeatherData("Bologna");
+
+module.exports = fetchRealWeatherData;

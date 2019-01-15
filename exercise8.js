@@ -16,4 +16,4 @@ var apiKey = "255d97c403d96b4642be1ff79ecddbfc";
 function fetchForecast() {
 }
 
-fetchForecast();
+module.exports = fetchForecast;

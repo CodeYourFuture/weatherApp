@@ -53,23 +53,11 @@ const failData = new Promise(function(resolve, reject) {
 });
 
 function parseWeatherPromise(data) {
-  data
-    .then(function(result) {
-      var parsedData = {
-        location: result.name,
-        weather: result.weather[0].main,
-        weatherDetails: result.weather[0].description,
-        windSpeed: result.wind.speed,
-        visibility: result.visibility,
-        cloudCoverage: result.clouds.all
-      };
-      console.log(parsedData);
-    })
-    .catch(function(error) {
-      console.log("Data processing failed!");
-    });
+  // implement!
 }
 
 // result
-parseWeatherPromise(testData);
-parseWeatherPromise(failData);
+// parseWeatherPromise(testData);
+// parseWeatherPromise(failData);
+
+module.exports = parseWeatherPromise;

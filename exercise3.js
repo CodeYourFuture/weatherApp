@@ -23,15 +23,11 @@ const failData = new Promise(function(resolve, reject) {
 });
 
 function promiseHandler(data) {
-  data
-    .then(function(result) {
-      console.log(result);
-    })
-    .catch(function(error) {
-      console.log('Data processing failed!')
-    });
+  // implement!
 }
 
 // result
-promiseHandler(testData);
-promiseHandler(failData);
+// promiseHandler(testData);
+// promiseHandler(failData);
+
+module.exports = promiseHandler;

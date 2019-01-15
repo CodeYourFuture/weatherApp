@@ -40,15 +40,10 @@ const testData = {
 };
 
 function parseWeather(data) {
-  return {
-    location: data.name,
-    weather: data.weather[0].main,
-    weatherDetails: data.weather[0].description,
-    windSpeed: data.wind.speed,
-    visibility: data.visibility,
-    cloudCoverage: data.clouds.all
-  };
+  // implement!
 }
 
 // result
-console.log(parseWeather(testData))
+// console.log(parseWeather(testData))
+
+module.exports = parseWeather;

@@ -20,24 +20,10 @@ var endPoint =
   "https://s3-eu-west-1.amazonaws.com/lorenzomixedstuff/weatherData";
 
 function fetchWeatherData() {
-  fetch(endPoint)
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(result) {
-      var parsedData = {
-        location: result.name,
-        weather: result.weather[0].main,
-        weatherDetails: result.weather[0].description,
-        windSpeed: result.wind.speed,
-        visibility: result.visibility,
-        cloudCoverage: result.clouds.all
-      };
-      console.log(parsedData);
-    })
-    .catch(function(error) {
-      console.log("Data processing failed!", error);
-    });
+  // implement!
 }
 
-fetchWeatherData();
+// result
+// fetchWeatherData();
+
+module.exports = fetchWeatherData;

@@ -38,13 +38,10 @@ const testData = {
 };
 
 function parseWeather(data) {
-  return {
-    name: data.name,
-    main: data.weather[0].main,
-    speed: data.wind.speed,
-    visibility: data.visibility
-  };
+  // implement!
 }
 
 // result
-console.log(parseWeather(testData))
+// console.log(parseWeather(testData));
+
+module.exports = parseWeather;
