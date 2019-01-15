@@ -17,7 +17,10 @@ var fetch = require("node-fetch"); // note: this is necessary to use 'fetch' in 
 
   NOTE: the apiKey string needs to be concatenated to the baseEndpoint string to obtain a valid endpoint
 */
-var apiKey = "255d97c403d96b4642be1ff79ecddbfc";
+
+// IMPORTANT NOTE! Saving API keys to github is a ****BAD**** idea. Everyone can see it, and there are automated scripts to find your keys and steal them. 
+// In this case, it's a free service and the risk is acceptable to avoid adding too much complexity.
+var apiKey = "255d97c403d96b4642be1ff79ecddbfc";  
 var baseEndpoint = "https://api.openweathermap.org/data/2.5/weather?q=Manchester&appid=";
 
 function fetchRealWeatherData() {
